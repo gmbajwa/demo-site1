@@ -1,0 +1,28 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0ps;
+}
+
+body{
+  font-family: arial, sans-serif;
+  background: silver;
+}
+
+main{
+  max-width: 1200px;
+  width: 95%;
+  margin: auto;
+}
+
+header, section,  footer{
+  margin: 3rem 0rem;
+  background: rgb(230, 230, 230);
+  min-height: 10vh;
+  box-shadow: 10px 10px 20px rgba(5, 0, 0, 0.78);
+}
+
+section{
+  min-height: 50vh;
+}
+

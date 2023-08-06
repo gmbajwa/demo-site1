@@ -1,0 +1,335 @@
+
+01- getElementById()
+
+02- querySelector()
+for object Id's use #
+for object classes use .
+for Object tag name use tag name. eg head.
+
+03- querySelectorAll()
+for all object that have a specified class. eg nav-item
+
+
+04- .textContent
+return the object text or change text
+
+
+05- .innerText
+only show none hidden text
+
+
+06- getAttribute()
+return element any attribute
+
+
+07- setAttribute('attributeName', 'attributeValue')
+take two parameter
+
+
+08- getElementsByClassName('nave-item') // return HTMLCollection
+slelecting multiple elements/object having same class.
+
+
+09- querySelectorAll(".nave-item") // retrun NodeList
+selectig multiple elements/object having same class.
+
+
+10- getElementsByTagName('a');
+take tag name, like a, body, header.
+
+
+11- Array.from()
+making HTMLCollection an array
+making NodeList to an array
+
+
+12- innerHTML
+
+
+13- Root Node
+
+
+14- Root Element
+
+
+15- Node
+
+
+16- Chide Node
+
+
+17- tree 
+
+
+18- HTML Element
+
+
+19- HTML Element Node
+
+
+20- Text Node
+contain \n and space ( new line and space )
+
+
+21- script tag
+
+
+22- Enter press called new line
+
+
+23- tryverse
+
+
+24- if we know root node we can go to any where in tree
+
+
+25- Child
+
+
+26- Parent
+
+
+27- Parent Child Relationship
+
+
+28- Tree Traversing
+can traverse tree by using methods
+
+
+29- getRootNode()
+
+
+30- childNodes
+return all child nodes
+
+
+31-children
+
+retrun only Element Nodes
+
+
+32- parenNode()
+
+
+33- child, parent and sibling relationship 
+
+
+34- nextSibling
+return Element and Text Nodes
+
+
+35- nextElementSibling
+only return Element Node
+
+
+35a- previousElementSibling
+
+
+36- classList
+return all classes of an Element have;
+
+
+37- classList.add()
+add new class through JS to DOMTokenList Iterator
+
+
+38- classList.remove()
+remove existing class through JS to DOMTokenList Iterator
+
+
+39- classList.contains()
+does a class exist in DOMTokenList
+
+
+40- classList.toggle()
+if a particular class exist then remove if not then add it
+
+
+41- document.createElement()
+create new element in DOM
+
+
+43- document.createTextNode('task 2');
+create text node
+
+
+44- appendChild();
+add child node to the parent node. eg li and text node
+
+
+45- append()
+append node as a child at last
+
+
+46- prepend()
+add node at start
+
+
+
+47- remove()
+remove Element Node
+
+
+48- before()
+add before the selected Node
+
+
+49- after()
+add after the selected Node
+
+
+50- insertAdjacentHTML(target, HTML)
+write the html of new Node Element and tell where to insert from the target
+
+
+
+51- beforeend ie. append()
+insert new Node Element before end of the target
+
+52- afterbegin ie. prepend()
+insert new Element Node after start the target
+
+53- beforebegin ie. before()
+insert New Element Node before the target
+
+
+54- afterend ie. after()
+insert New Element Node after end of the target
+
+
+55- cloneNode()
+clone node only not clone content of the node or child node
+
+
+56- cloneNode(true)
+clone node and its child ie. content or node childe also cloned and its called deep cloning.
+
+57- appendChild() ie- for IE to work properly
+
+
+58- insertBefore(newNode, referenceNode)
+insert new node in target node but given the reference node
+in the target.
+
+
+59- replaceChild(newNode, referenceNode)
+adding new node at place of existing node
+
+
+60- removeChild(referenceChild)
+remove the reference child of the target
+
+
+61- getBoundingClientRect()
+get Hight, width, x, y, top, bottom, left, right
+
+
+/------------------------------------------------------->>>
+* Events:
+/************************...****************************>>>
+
+Three Methods to make any Element in DOM 
+to listen an Event.
+
+62- Inline add event by using property
+very old not used now a days
+
+63- Every selected Element/Object From DOM tree
+has a onclick preperty, we can use this property
+to assign a fuction once the Element/Object is 
+clicked Event get Fire.
+but limitation is more than once we can not add Events
+by this Methods.
+
+64- addEventListener('eventName', callbacFunction)
+
+
+65. Math.random()
+give random number in between 0 and 1 but not 1
+
+
+66- Math.random() * 10
+return random nuber in between 1 to 9
+
+
+67- Math.floor(2.8989798);
+discard decimal part ie- 8989789
+and return only 2
+
+68- Math.floor(Math.frandom() * 256)
+return nuber in between 1 to 256
+
+69- keypress
+is an event to know which key is being pressed on document
+body
+
+70- mouseover
+is an event occur once you mouse over the element
+
+71- mouseleave
+is an event occure once you leave the mose fome the element
+
+72- Event Bublling/Propagation
+if we set event listener on child, parent and grandparent onece, and on click on child, child event will called first, then parent and grand
+
+73- Event Deleigation
+set only event listener at ul(parent) and on click li(child),parent event(ul) will be called on li(child)
+
+74- Synchronous Programming
+once the current instruction get execute, then the next
+instruction will get started to execute and untill current 
+instruction will not get finish, next instruction will not get started to execute. Single Threded of Execution.
+
+
+75- blocking Code
+takiing more time in execution and block the next intruction
+
+
+76- Blocking Event
+during feating data from API taking some more time( this line of code or these instruction call blocking code) and further next web page is not loading and this behaviour is called Blocking Event.
+
+
+77- Web API
+77.a -- addEventListener('eventName', callback, true)
+77.b -- setTimeout(callback, delay)
+
+
+77.c -- clearTimeout()
+take id and remove asynch setTimeout() 
+
+
+77.d -- setInterval()
+will call callback again and again automatically after specifyied delay
+
+
+77.e -- clearInterval(setIntervalId)
+interval id
+
+
+78.f -- Promise( (resolve, reject) =>{
+  if(true) resolve('value');
+  reject('rejected value');
+})
+
+
+77.g -- Promise.resolve('value');
+
+
+77.gh -- myPromise.then( onSuccess => {
+  console.log(onSuccess);
+}, onFailure => {
+  console.log(onFailure);
+} );
+
+
+77.i -- myPromise.then( onSuccess => {
+  console.log(onSuccess);
+}).catch( onFailure => {
+  console.log( onFailure );
+});
+
+
+
+77.j -- Promise.resolve(value);
+this wiil return a Promise which get resolve with value
+and we can call then method and return again value which is promise

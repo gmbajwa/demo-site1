@@ -1,0 +1,215 @@
+*{
+	/* border and padding not effect to width */
+	box-sizing: border-box;
+
+	/* default padding shuld be 0 */
+	padding: 0;
+
+	/* default margin should be 0 */
+	/* so developer can set byself */
+
+	margin: 0;
+
+	/* show new lines and white spaces */
+
+
+}
+
+body{background-color: gray;}
+
+button{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: all 0.4s;
+}
+
+button:hover{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.44);
+}
+
+textarea{
+  border: 2px solid gray;
+  background-color: silver;
+  border-radius: 5px;
+}
+
+input{
+  background-color:silver;
+  border-radius: 5px;
+  border: 2px solid gray;
+}
+
+input:hover, input:focus, textarea:focus, textarea:hover{
+  outline: none;
+  background-color: gray;
+  box-shadow: 6px 8px 10px black;
+  color: #fff;
+  transition: all 0.4s;
+}
+
+
+a{
+	text-decoration: none;
+	color: red;
+}
+
+.header{
+	position: relative;
+	min-height: 50vh;
+	background: rgba(111, 222, 123, 0.3);
+}
+
+.container{
+	max-width: 1200px;
+	margin: auto;
+	width: 90%;
+}
+
+.nav{
+	display: flex;
+	justify-content: space-between;
+	min-height: 8vh;
+}
+
+.nav-items{
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	width: 30%;
+
+}
+
+.headline{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.btn{
+	display: inline-block;
+	border: none;
+	cursor: pointer;
+}
+
+.btn-headline{
+	padding: 1rem 2rem;
+	font-size: 1rem;
+	margin-top: 1rem;
+	font-weight: 600;
+}
+
+.section-todo{
+	margin-top: 3rem;
+	text-align: center;
+}
+
+.bg-dark{
+  color: #eee;
+  background-color: #333;
+}
+
+.form-todo{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 3rem;
+}
+
+.form-todo input{
+	min-height: 5vh;
+}
+
+.form-todo input[type='text'] {
+	width: 78%;
+	padding: 0.8rem;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+.form-todo input[type='submit'] {
+	background: rgb(44, 55, 63);
+	font-weight: bold;
+	color: #fff;
+	width: 20%;
+}
+
+.todo-list{
+  color: #333;
+  margin-top: 1rem;
+  list-style-type: none;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.todo-list li{
+  padding: 0.5rem;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  background-color: silver;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-button{
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+
+.section-sign-up{
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	text-align: center;
+	background: silver;
+}
+
+.section-sign-up h2{
+	margin-bottom: 3rem;
+}
+
+.signup-form{
+	max-width: 800px;
+	width: 95%;
+	margin: auto;
+}
+
+.signup-form label{
+  margin-bottom: 0.5rem;
+	display: block;
+	text-align: left;
+}
+
+.signup-form input{
+	display: block;
+	width: 100%;
+	padding: 0.8rem;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+.form-group{
+	margin-top: 1rem;
+}
+
+.signup-form textarea{
+	width: 100%;
+}
+
+.signup-btn {
+	background: rgb(44, 55, 63);
+	padding: 1rem 2rem;
+	color: #fff;
+	margin-top: 3rem;
+}
+
+
+
